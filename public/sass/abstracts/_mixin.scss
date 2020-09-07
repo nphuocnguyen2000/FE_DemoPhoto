@@ -1,0 +1,28 @@
+// RESPONSIVE
+
+$mobile-width: 480px; 
+$tablet-width: 768px; 
+$tablet-plus-width: 1024px;  
+$desktop-width : 1367px;
+
+@mixin mobie {
+    @media (max-width: #{$tablet-width - 1px}){
+        @content;
+    }
+};
+@mixin  tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$tablet-plus-width - 1px}){
+        @content;
+    }
+}
+@mixin tablet-plus {   
+    @media (min-width: #{$tablet-plus-width}) and (max-width: #{$desktop-width - 1px }) {     
+        @content;  
+   } 
+}
+
+@mixin desktop {   
+    @media (min-width: #{$desktop-width}){     
+        @content;  
+   } 
+}  
