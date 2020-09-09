@@ -7,7 +7,7 @@ import axios from 'axios'
 function Content() {
   const [latiMe, setLatiMe] = useState(0)
   const [longiMe, setLongiMe] = useState(0)
-  const [maxDis, setMaxDis] = useState(5)
+  const [maxDis, setMaxDis] = useState(4)
 
 
   const containerStyle = {

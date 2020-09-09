@@ -5,12 +5,12 @@ export default function Cate(props) {
     const [search, setSearch] = useState("")
     const marks = [
         {
-          value: 5,
-          label: '5 km',
+          value: 4,
+          label: '4 km',
         },
         {
-          value: 10,
-          label: '10 km',
+          value: 5,
+          label: '5 km',
         },
         {
           value: 15,
@@ -155,10 +155,10 @@ export default function Cate(props) {
             <div className="cate__filter">
                 <h2>Lọc theo khoảng cách</h2>
                 <Slider
-                    defaultValue={5}
+                    defaultValue={4}
                     getAriaValueText={valuetext}
                     aria-labelledby="discrete-slider-always"
-                    step={5}
+                    step={1}
                     marks={ marks}
                     min={0}
                     max={20}
